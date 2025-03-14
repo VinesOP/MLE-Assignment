@@ -1,20 +1,44 @@
 # MLE-Assignment
 
-# MLE Assignment: DON Concentration Prediction
+# README  
 
-This repository contains a Google Colab notebook to predict DON concentration in corn using hyperspectral data from `MLE-Assignment.csv`.
+## **Project Overview**  
+This project predicts DON concentration in corn using hyperspectral data. The workflow includes data preprocessing, model training with a neural network, and prediction explanation using SHAP. The model is trained using TensorFlow and Optuna for hyperparameter tuning.  
 
-## Setup
-1. Upload `MLE-Assignment.csv` to Google Drive.
-2. Open the notebook in [Google Colab](https://colab.research.google.com/drive/15GGdIPmKkvpsyj8wmWwu_tZktaBu9AAO?usp=sharing).
-3. Run all cells (dependencies auto-installed).
+---
 
-## Usage
-- **Pipeline**: Preprocesses data, visualizes it, trains a neural network, evaluates it, and explains predictions with SHAP.
-- **Outputs**: Saves model (`don_prediction_model.h5`), scaler (`scaler.pkl`), and plots to Google Drive.
-- **Prediction**: Use `predict_new_data(sample_data)` with 448 spectral values.
+## **Setup Instructions**  
 
-## Repository
-- `MLE-Assignment.csv`: Dataset
-- `MLE-Assignment.ipynb`: Full pipeline
-- Outputs: Model, scaler, and PNGs (after running)
+### **1. Clone the Repository**  
+```bash
+git clone https://github.com/VinesOP/MLE-Assignment.git
+cd MLE-Assignment
+```
+
+### **2. Install Dependencies**  
+Use the requirements file:  
+```bash
+pip install -r requirements.txt
+```
+
+### **3. Open the Colab Notebook**  
+Upload `MLE-Assignment.ipynb` to Google Colab and run the cells sequentially.  
+
+---
+
+## **Repository Structure**  
+```
+├── MLE-Assignment.csv          # Hyperspectral dataset
+├── MLE-Assignment.ipynb        # Colab notebook
+├── model/                      # Saved model files
+├── README.md                   # Project documentation
+```
+
+---
+
+## **Usage**  
+1. Load the dataset and preprocess it.  
+2. Train the model using the Colab notebook.  
+3. Evaluate performance and explain predictions with SHAP.  
+
+---
